@@ -5,7 +5,12 @@
 	<groupId>dubbo-111</groupId>
 	<artifactId>dubbo-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>consumer</module>
+		<module>provider</module>
+		<module>api</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>dubbo-demo</name>
 	<url>http://maven.apache.org</url>
@@ -20,7 +25,7 @@
 		<cxf-rt-transports-http_version>3.1.7</cxf-rt-transports-http_version>
 		<cxf-rt-frontend-jaxws_version>3.1.7</cxf-rt-frontend-jaxws_version>
 	</properties>
-<!-- 
+<!--
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -33,7 +38,7 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring_version}</version>
 		</dependency>
-	
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -63,15 +68,15 @@
 
 	</dependencies>
 	 -->
-	 
+
 	  <dependencies>
-	  
+
 	  	<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
 			<version>${dubbo_version}</version>
 		</dependency>
-	  
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
@@ -226,5 +231,5 @@
                         <scope>provided</scope>
 		</dependency>
 	</dependencies>
-	
+
 </project>
